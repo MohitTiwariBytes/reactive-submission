@@ -20,7 +20,7 @@ export default function Home() {
                     <h1>Hello and welcome to Random Dogs.net</h1>
                     <span>
                         Here you will find one image of a random dog at a time. If you want to see a lot of dogs, head over to the{" "}
-                        <LinkText to={"/multi-dogs"} text={"MEGA DOG SUMMIT"}></LinkText>
+                        <LinkText to={"/dogs/multi-dogs"} text={"MEGA DOG SUMMIT"}></LinkText>
                     </span>
                     <Button text={"Get New dog Image"} onClick={handleRefetch}></Button>
                 </div>

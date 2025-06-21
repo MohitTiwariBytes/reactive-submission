@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.logo h1 {
+  cursor: pointer;
+}
+
 .navbar {
   width: 95%;
   max-width: 2000px;

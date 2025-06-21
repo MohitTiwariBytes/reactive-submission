@@ -5,9 +5,9 @@ import Layout from './Layout'
 import './App.css'
 import About from './Pages/About/About'
 import MegaDogs from './Pages/SUMMIT/Summit'
+import Dogs from './Pages/Dogs/Dogs'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
@@ -15,7 +15,8 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/multi-dogs" element={<MegaDogs />} />
+          <Route path="/dogs/" element={<Dogs />} />
+          <Route path="/dogs/multi-dogs" element={<MegaDogs />} />
         </Route>
       </Routes>
     </BrowserRouter>
