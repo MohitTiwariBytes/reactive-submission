@@ -1,0 +1,22 @@
+.main-home-page {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.homepage {
+  width: 95%;
+  max-width: 2000px;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.info {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
