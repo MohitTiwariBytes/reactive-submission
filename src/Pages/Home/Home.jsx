@@ -5,6 +5,7 @@ import Card from "../../Components/Cards/Card";
 import DogImage from "../../Components/DogImage";
 import LinkText from "../../Components/LinkText/LinkText";
 import Button from "../../Components/Buttons/Button";
+import reactHandmadeLogo from "../../assets/MohitTiwariBytes_reactLogoHandmade.png"
 
 export default function Home() {
     const dogRef = useRef();
@@ -12,6 +13,7 @@ export default function Home() {
     const handleRefetch = () => {
         dogRef.current?.refetch();
     };
+
 
     return (
         <div className="main-home-page">
@@ -24,10 +26,16 @@ export default function Home() {
                     </span>
                     <Button text={"Get New dog Image"} onClick={handleRefetch}></Button>
                 </div>
+
+                <div className="right-decorations">
+                    <div className="dino">
+                        <img src={reactHandmadeLogo}></img>
+                    </div>
+                </div>
                 <Card>
                     <DogImage ref={dogRef} />
                 </Card>
             </div>
-        </div>
+        </div >
     );
 }

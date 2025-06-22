@@ -3,6 +3,7 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+  margin-top: 100px;
 }
 
 .homepage {
@@ -19,4 +20,39 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.right-decorations {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  right: 220px;
+  top: 250px;
+}
+.dino img {
+  color: white;
+  mix-blend-mode: color-burn;
+
+  animation: animateImages 2s steps(10) infinite;
+}
+
+.holy-moly img {
+  height: 100px;
+  animation: animateImages 2s steps(10) infinite;
+}
+
+@keyframes animateImages {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
