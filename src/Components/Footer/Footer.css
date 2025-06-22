@@ -26,6 +26,7 @@
 .logoFooter h1 {
   font-size: 2rem;
   color: black;
+  animation: changeColor 5s infinite;
 }
 
 .logoFooter span {
@@ -45,4 +46,17 @@
 
 .links a {
   color: black;
+}
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+
+  50% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
 }
